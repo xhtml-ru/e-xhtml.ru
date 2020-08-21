@@ -1,0 +1,24 @@
+.footer {
+  &.mat-toolbar {
+    font-size: 12px;
+    line-height: 16px;
+    background-color: #3a3a3a;
+    color: #d4d4d4;
+    box-shadow: inset 0px 0 1px 1px rgba(255, 255, 255, .05);
+  }
+
+  &.mat-toolbar-single-row {
+    height: 40px;
+  }
+
+  &-copy {
+    font-weight: 100;
+  }
+  a,
+  a:link,
+  a:visited {
+    color: #d4d4d4;
+    margin: 0 0.5em;
+    text-decoration: none;
+  }
+}

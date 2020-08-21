@@ -1,0 +1,56 @@
+.page-editor {
+  height: 100vh;
+
+  .pad {
+    &-root {
+      height: calc(100% - 54px - 40px);
+      display: grid;
+      position: relative;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      justify-items: stretch;
+      background: url("https://xhtml.ru/logo/xhtml_ru_logo_256.png") no-repeat center;
+    }
+
+    &-single {
+      background-color: #fff;
+      top: 0;
+      bottom: 0;
+      overflow: auto;
+      display: none;
+
+      &.visible {
+        display: block;
+      }
+
+      &.active {
+        background-color: #fff;
+      }
+    }
+
+    &-html {
+      grid-row: 1 / 6;
+      grid-column: 1 / 5;
+    }
+
+    &-css {
+      grid-row: 6 / 11;
+      grid-column: 1 / 5;
+    }
+
+    &-js {
+      grid-row: 1 / 11;
+      grid-column: 5 / 9;
+    }
+
+    &-output {
+      grid-row: 1 / 13;
+      grid-column: 9 / 13;
+    }
+
+    &-console {
+      grid-row: 11 / 13;
+      grid-column: 1 / 9;
+    }
+  }
+}

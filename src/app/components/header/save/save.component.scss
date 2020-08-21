@@ -1,0 +1,12 @@
+.save {
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+  margin-left: 10px;
+
+  &__button.mat-stroked-button {
+    border-radius: 0;
+    border: 0;
+  }
+
+}

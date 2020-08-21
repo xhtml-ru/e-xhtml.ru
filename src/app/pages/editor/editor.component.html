@@ -1,0 +1,45 @@
+<div class="page-editor">
+  <e-header></e-header>
+  <div class="pad-root">
+    <e-pad
+      [pad]="state.editorPads.html"
+      [style.gridRow]="getStyle('html','row')"
+      [style.gridColumn]="getStyle('html','column')"
+      class="pad-single pad-html"
+      [class.active]="isActivePad('html')"
+      [class.visible]="isVisiblePad('html')"></e-pad>
+    <e-pad
+      [pad]="state.editorPads.css"
+      [style.gridRow]="getStyle('css','row')"
+      [style.gridColumn]="getStyle('css','column')"
+      class="pad-single pad-css"
+      [class.active]="isActivePad('css')"
+      [class.visible]="isVisiblePad('css')"></e-pad>
+    <e-pad
+      [pad]="state.editorPads.js"
+      [style.gridRow]="getStyle('js','row')"
+      [style.gridColumn]="getStyle('js','column')"
+      class="pad-single pad-js"
+      [class.active]="isActivePad('js')"
+      [class.visible]="isVisiblePad('js')"></e-pad>
+    <e-output
+      [style.gridRow]="getStyle('output','row')"
+      [style.gridColumn]="getStyle('output','column')"
+      class="pad-single pad-output"
+      [class.active]="isActivePad('output')"
+      [class.visible]="isVisiblePad('output')"></e-output>
+    <e-console
+      [style.gridRow]="getStyle('console','row')"
+      [style.gridColumn]="getStyle('console','column')"
+      class="pad-single pad-console"
+      [class.active]="isActivePad('console')"
+      [class.visible]="isVisiblePad('console')"></e-console>
+    <e-srvc
+      [style.gridRow]="getStyle('srvc','row')"
+      [style.gridColumn]="getStyle('srvc','column')"
+      class="pad-single pad-srvc"
+      [class.active]="isActivePad('srvc')"
+      [class.visible]="isVisiblePad('srvc')"></e-srvc>
+  </div>
+  <e-footer></e-footer>
+</div>

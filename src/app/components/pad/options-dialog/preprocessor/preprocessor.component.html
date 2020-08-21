@@ -1,0 +1,13 @@
+<form [formGroup]="transformerForm"
+  *ngIf="pad && pad.options">
+  <mat-form-field>
+    <mat-label>Preprocessor</mat-label>
+    <mat-select
+      formControlName="transformer"
+      (selectionChange)="changeTransformer()">
+      <mat-option
+        *ngFor="let option of pad.options.transformers"
+        [value]="option.id">{{ option.title }}</mat-option>
+    </mat-select>
+  </mat-form-field>
+</form>

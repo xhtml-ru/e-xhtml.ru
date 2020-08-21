@@ -1,0 +1,46 @@
+.pad-toggler {
+  box-shadow: 0px 0 1px 1px rgba(255, 255, 255, .1);
+
+  &.mat-button-toggle-standalone.mat-button-toggle-appearance-standard,
+  &.mat-button-toggle-group-appearance-standard {
+    border-radius: 0;
+    border: 0;
+  }
+
+  .mat-button-toggle {
+    display: flex;
+    min-width: 60px;
+    & + .mat-button-toggle {
+      border: none;
+    }
+    &-appearance-standard {
+      background: #3a3a3a;
+      color: #d4d4d4;
+      box-shadow: 0px 0 1px 1px rgba(255, 255, 255, .15);
+    }
+    &-checked {
+      background: #1e1e1e;
+      color: #d4d4d4;
+      // box-shadow: none;
+    }
+  }
+
+    .badge {
+      position: relative;
+      display: inline-block;
+      font-size: 0px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        font-size: 0px;
+        width: 6px;
+        height: 6px;
+        border-radius: 3px;
+        background-color: #e30f3c;
+        top: -9px;
+        left: -6px;
+      }
+    }
+
+}

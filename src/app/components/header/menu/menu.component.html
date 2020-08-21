@@ -1,0 +1,45 @@
+<div class="menu">
+  <button
+    mat-stroked-button
+    class="menu__button"
+    [matMenuTriggerFor]="menu"
+    >
+    <span class="material-icons">
+      menu
+    </span>
+  </button>
+  <mat-menu #menu="matMenu" >
+    <a href="https://x.xhtml.ru"
+      target="_blank"
+      rel="noopener noreferrer"
+      style="color:#d3133c;font-weight:700;"
+      mat-menu-item>
+      Try new version!!!
+    </a>
+    <a href="https://github.com/xhtml-ru/e-xhtml.ru"
+      rel="noopener noreferrer"
+      mat-menu-item>
+      View on Github
+    </a>
+    <a href="https://xhtml.ru/feedback/"
+      rel="noopener noreferrer"
+      mat-menu-item>
+      Feedback
+    </a>
+    <a href="https://twitter.com/ru_xhtml"
+      rel="noopener noreferrer"
+      mat-menu-item>
+      Twitter
+    </a>
+    <a href="https://t.me/xhtmlru"
+      rel="noopener noreferrer"
+      mat-menu-item>
+      Telegram
+    </a>
+    <a href="https://www.paypal.com/paypalme/ambaranow"
+      rel="noopener noreferrer"
+      mat-menu-item>
+      Donate
+    </a>
+  </mat-menu>
+</div>

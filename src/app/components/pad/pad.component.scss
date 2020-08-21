@@ -1,0 +1,33 @@
+  .pad-head {
+    &.mat-toolbar {
+      background-color: #3a3a3a;
+      color: rgba(212, 212, 212, 1);
+      font-size: 14px;
+      line-height: 20px;
+      box-shadow: inset 0px 0 1px 1px rgba(255, 255, 255, .05);
+    }
+    &__sup {
+      font-weight: 100;
+    }
+
+    &.mat-toolbar-single-row {
+      height: 32px;
+    }
+    .mat-icon-button {
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
+      margin: 0 10px 0 -10px;
+    }
+  }
+.pad-body {
+  height: calc(100% - 32px);
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #1e1e1e;
+}
+.pad-editor {
+  height: 100%;
+  width: 100%;
+}

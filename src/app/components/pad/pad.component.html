@@ -1,0 +1,26 @@
+<mat-toolbar class="pad-head">
+  <button
+    mat-icon-button
+    aria-label="Settings"
+    [disabled]="!pad.options.active"
+    (click)="openOptionsDialog()"
+    matTooltip="Settings"
+    >
+    <span class="material-icons">
+      settings
+    </span>
+  </button>
+  <div *ngIf="pad">
+    {{pad.title}}
+    <sup *ngIf="preprocessor" class="pad-head__sup">({{ preprocessor }})</sup>
+  </div>
+  <span class="toolbar-spacer"></span>
+</mat-toolbar>
+<div class="pad-body">
+  <ngx-monaco-editor
+    class="pad-editor"
+    [options]="editorOptions"
+    (ngModelChange)="modelChanged($event)"
+    (onInit)="editorInit($event)"
+    [(ngModel)]="code.src"></ngx-monaco-editor>
+</div>

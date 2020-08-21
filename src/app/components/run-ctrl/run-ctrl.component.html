@@ -1,0 +1,20 @@
+  <div class="run-ctrl">
+    <button
+      mat-stroked-button
+      class="run-ctrl__button"
+      (click)="run()"
+      matTooltip="Run">
+      <span class="material-icons">
+        play_circle_outline
+      </span>
+    </button>
+    <mat-slide-toggle
+      class="run-ctrl__auto"
+      labelPosition="before"
+      color="primary"
+      (change)="autoRunChange($event)"
+      [checked]="autoRun"
+      matTooltip="Auto run {{ autoRun ? 'ON' : 'OFF' }}">
+      auto
+    </mat-slide-toggle>
+  </div>

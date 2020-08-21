@@ -1,0 +1,23 @@
+.console-logs {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  &__output {
+    font-size: 12px;
+    font-family: monospace;
+  }
+
+  .cl {
+    white-space: pre;
+    padding: 5px 10px;
+    &-error {
+      color: #ff4f4f;
+    }
+    &-warn {
+      color: #ffc94f;
+    }
+  }
+}

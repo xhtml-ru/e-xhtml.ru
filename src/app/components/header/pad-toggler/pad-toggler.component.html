@@ -1,0 +1,16 @@
+<mat-button-toggle-group
+  #group="matButtonToggleGroup"
+  multiple="true"
+  class="pad-toggler">
+
+  <mat-button-toggle
+    *ngFor="let pad of padsArr"
+    value="{{ pad.title | lowercase }}"
+    aria-label="{{pad.title}}"
+    (change)="togglePad(pad)"
+    [checked]="isVisiblePad(pad)">
+    <span class="badge" *ngIf="isCode(pad)"></span>
+    {{pad.title}}
+  </mat-button-toggle>
+
+</mat-button-toggle-group>

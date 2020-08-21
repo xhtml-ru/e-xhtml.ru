@@ -1,0 +1,17 @@
+.run-ctrl {
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+  margin-left: 10px;
+
+  &__button.mat-stroked-button {
+    border-radius: 0;
+    border-top: 0;
+    border-bottom: 0;
+  }
+
+  &__auto {
+    margin-left: 10px;
+    align-self: center;
+  }
+}

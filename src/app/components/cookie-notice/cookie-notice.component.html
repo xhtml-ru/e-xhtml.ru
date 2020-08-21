@@ -1,0 +1,18 @@
+<div *ngIf="!accepted" id="cookie-notice" role="banner" class="cookie-notice" aria-label="Уведомление о куки">
+  <div class="cookie-notice-container">
+    <span id="cn-notice-text" class="cn-text-container">
+      Эта страница использует куки для сбора статистики и рекламы. Если намереваетесь продолжить пользоваться этой страницей, 
+      считаем, что Вас всё устраивает.
+    </span>
+    <span id="cn-notice-buttons" class="cn-buttons-container">
+      <a href="#" (click)="acceptMe()" id="cn-accept-cookie" data-cookie-set="accept"
+        class="cn-set-cookie cn-button bootstrap button">
+        Ладно, уберите это!
+      </a>
+      <a href="https://xhtml.ru/privacy-policy/" target="_blank" rel="noopener noreferrer" id="cn-more-info"
+        class="cn-more-info cn-button bootstrap button">
+        Политика конфиденциальности &raquo;
+      </a>
+    </span>
+  </div>
+</div>
